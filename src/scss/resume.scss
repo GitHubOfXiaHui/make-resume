@@ -1,3 +1,19 @@
-p {
-  color: red;
+.resume {
+  max-width: 768px;
+  margin: 0 auto;
+
+  .left-part {
+    border-radius: 8px;
+    width: 30%;
+    background-color: green;
+    text-align: center;
+  }
+
+  .right-part {
+    width: 70%;
+  }
+}
+
+section {
+  display: inline-block;
 }

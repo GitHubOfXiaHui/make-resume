@@ -1,7 +1,14 @@
 <%- include('header')%>
-<% if(env!=='dev'){ %>
-<link rel="stylesheet" href="/resume.css">
-<% } %>
-<p>你看我牛逼不</p>
-<script src="/resume_build.min.js"></script>
-<%- include('footer')%>
+  <% if(env!=='dev'){ %>
+    <link rel="stylesheet" href="/resume.css">
+    <% } %>
+      <div class="resume">
+        <div class="left-part">
+          <section class="info">
+            <h1 class="title">你看我屌不</h1>
+          </section>
+        </div>
+        <div class="right-part"></div>
+      </div>
+      <script src="/resume_build.min.js"></script>
+      <%- include('footer')%>
