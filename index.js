@@ -7,6 +7,7 @@ const isDev = process.env.NODE_ENV !== 'production';
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.locals.env = process.env.NODE_ENV || 'dev';
 app.locals.reload = true;

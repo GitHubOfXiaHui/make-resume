@@ -1,12 +1,88 @@
+body {
+  font-family: PingFang TC,Avenir Next,Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+  background-color: #EEEEEE;
+
+  p {
+    margin: 0;
+    color: #F2FFFF;
+    font-size: 12px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #F2FFFF;
+  }
+}
+
 .resume {
-  max-width: 768px;
+  max-width: 1060px;
   margin: 0 auto;
 
   .left-part {
-    border-radius: 8px;
     width: 30%;
-    background-color: green;
+    height: 100%;
+    background-color: #254665;
     text-align: center;
+
+    .info {
+      padding: 20px 10px;
+
+      .line {
+        border-top: 1px solid #F2FFFF;
+        width: 250px;
+        margin-top: -20px;
+        margin-bottom: 30px;
+      }
+
+      .title {
+        text-align: left;
+        padding-left: 12px;
+        color: #F2FFFF;
+        margin: 0;
+        font-weight: normal;
+        margin-bottom: 10px;
+
+        .label {
+          padding: 0 5px;
+          display: inline-block;
+          background-color: #254665;
+        }
+      }
+
+      .text {
+        text-align: left;
+        margin-bottom: 10px;
+
+        .label {
+          margin-left: -10px;
+          display: inline-block;
+          width: 80px;
+          height: 100%;
+          text-align: right;
+        }
+
+        .t-icon {
+          height: 16px;
+          vertical-align: middle;
+          margin-top: -3px;
+          margin-right: 3px;
+        }
+      }
+    }
+
+    .user {
+      padding: 30px 0;
+
+      .title {
+        margin-left: -10px;
+        letter-spacing: 3px;
+      }
+
+      .tips {
+        font-size: 13px;
+        color: #F2FFFF;
+      }
+    }
   }
 
   .right-part {
