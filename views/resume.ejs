@@ -1,3 +1,7 @@
 <%- include('header')%>
+<% if(env!=='dev'){ %>
+<link rel="stylesheet" href="/resume.css">
+<% } %>
 <p>你看我牛逼不</p>
+<script src="/resume_build.min.js"></script>
 <%- include('footer')%>
