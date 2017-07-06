@@ -1,8 +1,8 @@
 .right-part {
   position: relative;
-  left: 30%;
+  left: 29%;
   padding: 20px 20px 30px 5px;
-  width: calc(70% - 25px);
+  width: calc(71% - 25px);
   background-color: #FFFFFF;
 
   .info {
@@ -74,6 +74,8 @@
 
       .link {
         color: #445565;
+        font-size: 15px;
+        margin-left: 20px;
       }
     }
   }
