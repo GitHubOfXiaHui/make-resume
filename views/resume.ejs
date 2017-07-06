@@ -1,25 +1,10 @@
 <%- include('header')%>
-  <% if(env!=='dev'){ %>
-    <link rel="stylesheet" href="/resume.css">
-    <% } %>
-      <div class="resume">
-        <div class="left-part">
-          <section class="user info">
-            <h1 class="title">李嘉越</h1>
-            <p class="tips">前端工程师</p>
-          </section>
-          <section class="info">
-            <h4 class="title"><span class="label">基本信息</span></h4>
-            <div class="line"></div>
-            <p class="text"><span class="label">教育经历：</span>北京邮电大学（2011-2015）</p>
-            <p class="text"><span class="label">工作年限：</span>两年半</p>
-            <p class="text"><span class="label"><img class="t-icon" src="/img/phone.png"/>电话：</span>18516670010</p>
-            <p class="text"><span class="label"><img class="t-icon" src="/img/mail.png"/>邮箱：</span>dadeldragon@163.com</p>
-            <p class="text"><span class="label"><img class="t-icon" src="/img/blog.png"/>博客：</span><a href="http://dadel.live/">dadel.live</a></p>
-            <p class="text"><span class="label"><img class="t-icon" src="/img/github.png"/>GitHub：</span><a href="https://github.com/lidad">github.com/lidad</a></p>
-          </section>
-        </div>
-        <div class="right-part"></div>
-      </div>
-      <script src="/resume_build.min.js"></script>
-      <%- include('footer')%>
+<% if(env!=='dev'){ %>
+  <link rel="stylesheet" href="/resume.css">
+<% } %>
+  <div class="resume">
+    <%- include('leftPart')%>
+    <%- include('rightPart')%>
+  </div>
+  <script src="/resume_build.min.js"></script>
+<%- include('footer')%>
