@@ -1,4 +1,5 @@
-@import  "./leftPart.scss";
+@import "./leftPart.scss";
+@import "./rightPart.scss";
 
 body {
   font-family: PingFang TC,Avenir Next,Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,sans-serif;
@@ -7,7 +8,7 @@ body {
   p {
     margin: 0;
     color: #F2FFFF;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   a {
@@ -18,4 +19,10 @@ body {
 
 section {
   display: inline-block;
+}
+
+.resume {
+  width: 1060px;
+  margin: 0 auto;
+  position: relative;
 }
