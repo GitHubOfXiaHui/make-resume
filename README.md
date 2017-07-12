@@ -7,7 +7,7 @@
 - 首先，clone本项目
 - 接着，执行以下命令
 ```
-$ npm run install            // 安装依赖
+$ npm install            // 安装依赖
 $ npm run dev                // 以开发环境启动项目（hmr）
 ```
 - 然后，在views文件夹下的模版中替换为你自己的信息
