@@ -5,7 +5,7 @@
     <section class="content">
       <h4 class="con-title"><b class="ball-icon"></b>后端技能</h4>
       <div class="text-group">
-        <p class="text"><b class="ball-icon"></b><span class="text-info">熟练使用 spring boot，mybatis 等 Java Web 开发框架，能够独立开发后台管理系统</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">熟练使用 spring boot，mybatis 等 Java Web 开发框架，能够独立开发后台系统</span></p>
         <p class="text"><b class="ball-icon"></b><span class="text-info">熟练使用 PRC，消息，分布式缓存（redis）等中间件技术，具有微服务项目开发经验</span></p>
         <p class="text"><b class="ball-icon"></b><span class="text-info">熟练使用 Java集合，多线程和设计模式，致力于编写简洁一致，易于理解的代码</span></p>
         <p class="text"><b class="ball-icon"></b><span class="text-info">熟练使用 JUnit编写测试用例，认同TDD的设计理念，并在实际项目中遵守该理念</span></p>
@@ -33,40 +33,40 @@
     <h3 class="title"><span class="label">项目经验</span></h3>
     <div class="line"></div>
     <section class="content">
-      <h4 class="con-title"><b class="ball-icon"></b>前置2.0项目<span class="gap">项目主要负责人</span><span class="gap">2020.02 ~ 至今</span></h4>
+      <h4 class="con-title"><b class="ball-icon"></b>前置2.0项目<span class="gap">项目负责人</span><span class="gap">2020.02 ~ 至今</span></h4>
       <div class="text-group">
-        <p class="text"><b class="ball-icon"></b><span class="text-info">系统的主要功能是：组合各种微服务，形成复合操作，然后对外提供统一的访问接口</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">同时对于一些周期性的请求，系统能够定时（通过接受调度系统定时调度的方式）、自动构建相应的任务</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">另外，系统还能接收下游微服务发送的命令消息，完成特定申请的后续操作（例如：退汇）</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">系统使用 spring boot 搭建，使用 mybatis plus 操作数据库，同时使用 RPC 请求下游微服务，然后接收并处理结果消息</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">系统的数据模型是两层的多叉树结构，使用生成器模式辅助业务系统构造参数，同时综合使用简单工厂模式，模板方法模式和观察者模式来完成请求。另外，对于记日志和处理异常等横切任务，则是使用装饰器模式来统一处理</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">技术选型：spring boot，mybatis plus，RPC，redis，消息中间件</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">系统现状：1. 所有核心微服务已对接到本系统；2. 90%的业务系统已通过本系统完成放款，还款请求；3. 系统现有数据量在千万级别</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">系统功能：1. 组合各种微服务，形成复合操作，对外提供统一的访问接口；2. 对于一些周期性的请求，系统也能够定时（通过接受调度系统定时调度的方式）、自动构建相应的任务；3. 接收下游微服务发送的命令消息，完成特定申请的后续操作（例如：退汇，分账）</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">系统简介：本系统采用两层的多叉树结构的数据模型，使用生成器模式辅助业务系统构造参数，同时综合使用简单工厂模式，模板方法模式和观察者模式来完成请求。对于记录日志和处理异常等横切任务，使用装饰器模式来统一处理</span></p>
       </div>
     </section>
     <section class="content">
       <h4 class="con-title"><b class="ball-icon"></b>数据异构项目<span class="gap">数据同步模块负责人</span><span class="gap">2019.07 ~ 2019.09</span></h4>
       <div class="text-group">
-        <p class="text"><b class="ball-icon"></b><span class="text-info">项目分为4个模块：数据采集模块，数据同步模块，数据查询模块和数据比对模式，采用 spring boot + kafka + 分库分表技术搭建</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">数据同步模块主要功能包括：1. 接收数据采集模块发布的数据变更消息，经适当变换后写入分表，2. 接收流程引擎的编排，实时校验数据同步结果</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">数据同步模块在同步数据之前，可以对数据进行加工（如：四则混合运算，字符串拼接以及行列转换），另外，为了适应分表查询，还能提取索引数据建立索引表</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">作为基础组件，数据同步模块在完成数据同步功能的基础之上，还具备高度灵活的配置能力，可以按需配置同步数据源，同步字段，以及索引表</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">技术选型：spring boot，kafka，分库分表</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">数据同步模块现状：1. 所有核心微服务已通过本模块完成数据同步；2. 同步数据量在千万级别，TP99 < 100ms</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">数据同步模块功能：1. 接收数据采集模块发布的数据变更消息，经适当变换后写入分表，2. 接收流程引擎的编排，实时校验数据同步结果</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">数据同步模块简介：本模块在同步数据时，可以对数据进行加工（如：四则混合运算，字符串拼接以及行列转换），还可以提取数据建立索引表，以适应分库分表查询。作为基础组件，本模块还具备高度灵活的配置能力，可以按需配置数据源，同步字段和索引字段</span></p>
       </div>
     </section>
     <section class="content">
       <h4 class="con-title"><b class="ball-icon"></b>快速放款项目<span class="gap">还款，审核，内外交互模块负责人</span><span class="gap">2018.08 ~ 2018.10，2020.05</span></h4>
       <div class="text-group">
-        <p class="text"><b class="ball-icon"></b><span class="text-info">快速放款系统的主要功能是为客户提供融资服务，同时接受客户的还款请求</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">项目分为前端页面模块，内外交互模块，管理端页面模块和后端处理模块4个部分</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">前端页面使用内部开源的UI组件搭建，用于采集客户请求，然后将请求发送到内外交互模块</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">内外交互模块在完成参数校验之后，拆解前端请求，然后转换成RPC请求，逐一调用后端处理模块</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">后端处理模块在接到请求之后，先落库，然后开启本地审核流程，待审核通过之后，请求前置系统完成申请</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">技术选型：spring boot，RPC，消息中间件</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">项目主要功能：1. 为客户提供融资服务，2. 接受客户的还款请求</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">项目分为4个模块：前端页面模块，内外交互模块，管理端页面模块和后端处理模块。本人工作包括内外交互模块，管理端和后端还款、审核功能的开发</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">以还款功能为例，本人开发的内外交互模块用于参数校验，请求分解与协议转换；后端还款功能用于保存请求和开启审核流；管理端页面用于配置审核流以及运营审批</span></p>
       </div>
     </section>
     <section class="content">
       <h4 class="con-title"><b class="ball-icon"></b>台账管理系统<span class="gap">放款配置功能和减免功能负责人</span><span class="gap">2018.04 ~ 2018.06</span></h4>
       <div class="text-group">
-        <p class="text"><b class="ball-icon"></b><span class="text-info">台账管理系统作为一个后端管理系统主要用于维护系统配置和帮忙运营同事完成日常运营工作</span></p>
-        <p class="text"><b class="ball-icon"></b><span class="text-info">所使用到的技术包括：spring boot，ant design pro</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">技术选型：spring boot，ant design pro</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">台账管理系统主要功能：1. 维护台账系统各项配置，2. 辅助运营同事完成运营工作</span></p>
+        <p class="text"><b class="ball-icon"></b><span class="text-info">在项目开发过程中，本人自学了react相关知识，并在复盘会上分享了使用经验，反响极佳</span></p>
       </div>
     </section>
+    <div style="margin-bottom: 125px"></div>
   </section>
 </div>
